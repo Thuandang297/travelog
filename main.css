@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:32px 0px;
+    padding: 32px 0px;
 }
 
 .start-logo {
@@ -46,37 +46,64 @@ button {
 
 .list-menu button {
     color: rgba(25, 24, 37, 0.5);
-    font-weight: 700;
-    font-size: 14px;
-    background-color: #fff;
 }
 
-.btn-login{
+.btn-login {
     border-radius: 100px;
     padding: 16px 32px;
     color: #222831;
 }
 
-.btn-signup{
+.btn-signup {
     border-radius: 100px;
     padding: 16px 32px;
     background-color: #5D50C6;
     color: #EEEEEE;
 }
-/* desktop */
 
-@media (min-width: 1440px){
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* tablet */
-@media (min-width: 1023px){
- .list-menu{
+
+/* desktop */
+
+@media (min-width: 1440px) {
+    .menu-icon {
         display: none;
     }
 }
-/* mobile */
-@media (max-width: 430px) {
-    .list-menu{
+
+/* tablet */
+@media (max-width: 1439px) {
+    .list-menu {
         display: none;
+    }
+
+    .nav-bar {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+}
+
+/* phone */
+@media (max-width: 1023px) {
+    .list-menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .nav-bar {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
